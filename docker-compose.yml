@@ -1,0 +1,17 @@
+services:
+  portfolio:
+    container_name: portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: portfolio:0.0.1
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    networks:
+      - portfolio-net
+networks:
+  portfolio-net:
+    external: true
+    name: nginx-proxy
+
