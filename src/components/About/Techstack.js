@@ -9,6 +9,7 @@ import {
   DiMysql,
 } from "react-icons/di";
 import {
+  SiElasticsearch,
   SiRedis,
   SiPostgresql,
   SiTypescript,
@@ -23,7 +24,7 @@ import {
   SiLinux,
   SiKong,
   SiSwagger,
-  SiNginx
+  SiNginx,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -52,7 +53,7 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiElasticsearch />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMariadb />
